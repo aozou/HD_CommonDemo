@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cBd-4i-VkZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="I2q-EJ-uTW">
+            <objects>
+                <navigationController id="cBd-4i-VkZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fom-yM-fEF">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Olb-LQ-Q7Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1gw-51-9b5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-807" y="118"/>
+        </scene>
+        <!--图层应用-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mR-uz-Wof">
+                                <rect key="frame" x="10" y="74" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5X6-zO-zJz"/>
+                                    <constraint firstAttribute="width" constant="90" id="f5I-BK-H1P"/>
+                                </constraints>
+                                <state key="normal" title="爱心跳动"/>
+                                <connections>
+                                    <segue destination="6TX-N4-eUS" kind="push" id="yqx-hX-zZ6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdf-dk-FPN">
+                                <rect key="frame" x="120" y="74" width="90" height="30"/>
+                                <state key="normal" title="Gradient应用"/>
+                                <connections>
+                                    <segue destination="Ix2-vU-Lcw" kind="push" id="Ut2-bd-Soa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="转场动画" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AmF-2V-GmX">
+                                <rect key="frame" x="10" y="214" width="90" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ku4-eV-xDq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pW-Oe-ack">
+                                <rect key="frame" x="10" y="255" width="90" height="30"/>
+                                <state key="normal" title="文字翻转"/>
+                                <connections>
+                                    <segue destination="nUZ-07-RiY" kind="push" id="Oq6-j6-03a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pdf-dk-FPN" firstAttribute="height" secondItem="8mR-uz-Wof" secondAttribute="height" id="3Nx-dp-UQg"/>
+                            <constraint firstItem="4pW-Oe-ack" firstAttribute="top" secondItem="AmF-2V-GmX" secondAttribute="bottom" constant="20" id="55o-of-JgR"/>
+                            <constraint firstItem="pdf-dk-FPN" firstAttribute="leading" secondItem="8mR-uz-Wof" secondAttribute="trailing" constant="20" id="5ho-kn-kKS"/>
+                            <constraint firstItem="AmF-2V-GmX" firstAttribute="width" secondItem="8mR-uz-Wof" secondAttribute="width" id="8uq-cl-IcV"/>
+                            <constraint firstItem="8mR-uz-Wof" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="9CC-Uh-nnW"/>
+                            <constraint firstItem="4pW-Oe-ack" firstAttribute="centerX" secondItem="8mR-uz-Wof" secondAttribute="centerX" id="9uo-Sy-yXp"/>
+                            <constraint firstItem="4pW-Oe-ack" firstAttribute="width" secondItem="8mR-uz-Wof" secondAttribute="width" id="A32-Ca-LvP"/>
+                            <constraint firstItem="8mR-uz-Wof" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="B6b-ON-0iJ"/>
+                            <constraint firstItem="pdf-dk-FPN" firstAttribute="width" secondItem="8mR-uz-Wof" secondAttribute="width" id="Fc1-de-lWd"/>
+                            <constraint firstItem="pdf-dk-FPN" firstAttribute="centerY" secondItem="8mR-uz-Wof" secondAttribute="centerY" id="JUd-wN-2hB"/>
+                            <constraint firstItem="AmF-2V-GmX" firstAttribute="leading" secondItem="8mR-uz-Wof" secondAttribute="leading" id="W26-hp-7wQ"/>
+                            <constraint firstItem="4pW-Oe-ack" firstAttribute="height" secondItem="8mR-uz-Wof" secondAttribute="height" id="fAH-fo-Uxw"/>
+                            <constraint firstItem="AmF-2V-GmX" firstAttribute="top" secondItem="8mR-uz-Wof" secondAttribute="bottom" constant="110" id="hzE-Ry-LGv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="图层应用" id="5oc-CW-qN6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="118.29085457271366"/>
+        </scene>
+        <!--文字翻转-->
+        <scene sceneID="skA-R2-9ko">
+            <objects>
+                <viewController id="nUZ-07-RiY" customClass="TransitionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iNT-Yc-3pH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="fn1-C0-TNm"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="文字翻转" id="Tod-nd-CDS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b6c-F1-R52" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6" y="843"/>
+        </scene>
+        <!--Gradient应用-->
+        <scene sceneID="JTa-Qu-WFH">
+            <objects>
+                <viewController id="Ix2-vU-Lcw" customClass="GradientViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9EX-O9-PCh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="LI3-4K-y6p"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Gradient应用" id="viv-dD-oIy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RGl-df-Ydg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="-575"/>
+        </scene>
+        <!--爱心跳动-->
+        <scene sceneID="TiF-Ia-NJG">
+            <objects>
+                <viewController id="6TX-N4-eUS" customClass="HeartViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BR0-HW-zde">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYq-cG-s2p" customClass="heartView">
+                                <rect key="frame" x="20" y="84" width="80" height="80"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="D7k-hU-SYs"/>
+                                    <constraint firstAttribute="width" constant="80" id="Iw3-Q7-MgS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hYq-cG-s2p" firstAttribute="top" secondItem="W25-ZB-3yn" secondAttribute="top" constant="20" id="jZn-ee-eMX"/>
+                            <constraint firstItem="hYq-cG-s2p" firstAttribute="leading" secondItem="W25-ZB-3yn" secondAttribute="leading" constant="20" id="uby-tE-dS1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W25-ZB-3yn"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="爱心跳动" id="47a-zc-DZw"/>
+                    <connections>
+                        <outlet property="hearV" destination="hYq-cG-s2p" id="b08-8u-pGa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="62M-ea-6OY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839.20000000000005" y="128.18590704647679"/>
+        </scene>
+    </scenes>
+</document>
